@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+</head>
+<body>
+    <p>142325199409110510</p>
+<script>
+    var p=document.querySelector('p');
+    var text=document.querySelector('p').innerHTML;
+    function num(str){
+        var reg=/\d{4}$/;
+        return str.replace(reg,'****');
+    }
+   p.innerHTML=num(text);
+</script>
+</body>
+
+</html>
